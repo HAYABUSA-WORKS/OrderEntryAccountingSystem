@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="20sp"
+        android:text="@string/txtSeat"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spSeat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spSeat" />
+
+    <Spinner
+        android:id="@+id/spSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300sp"
+        android:minHeight="60sp"
+        app:layout_constraintStart_toEndOf="@+id/tvSeat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="350sp"
+        android:minHeight="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spSeat" />
+
+    <Spinner
+        android:id="@+id/spQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="10sp"
+        android:minHeight="60sp"
+        app:layout_constraintStart_toEndOf="@+id/spFood"
+        app:layout_constraintTop_toTopOf="@+id/spFood" />
+
+    <TextView
+        android:id="@+id/tvKO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtKO"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spFood"
+        app:layout_constraintStart_toEndOf="@+id/spQuantity"
+        app:layout_constraintTop_toTopOf="@+id/spFood" />
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtNote"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spFood" />
+
+    <EditText
+        android:id="@+id/edNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="13"
+        android:hint="@string/hintNote"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNote"
+        app:layout_constraintStart_toEndOf="@+id/tvNote"
+        app:layout_constraintTop_toTopOf="@+id/tvNote" />
+
+    <Button
+        android:id="@+id/btnAddChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/btnAdd"
+        app:layout_constraintBottom_toBottomOf="@+id/spFood"
+        app:layout_constraintStart_toEndOf="@+id/tvKO"
+        app:layout_constraintTop_toTopOf="@+id/spFood" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#281E78"
+        android:text="@string/txtOrderList"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnOrderSend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNote" />
+
+    <ListView
+        android:id="@+id/listOrder"
+        android:layout_width="0dp"
+        android:layout_height="230dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnVacantSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/btnVacantSeatInquire"
+        app:layout_constraintBottom_toBottomOf="@+id/spSeat"
+        app:layout_constraintStart_toEndOf="@+id/spSeat"
+        app:layout_constraintTop_toTopOf="@+id/spSeat" />
+
+    <Button
+        android:id="@+id/btnOrderSend"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnOrderSend"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#281E78"
+        android:text="@string/txtAlreadyOrderList"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnOrderInquire"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listOrder" />
+
+    <Button
+        android:id="@+id/btnOrderInquire"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnOrderInquire"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <ListView
+        android:id="@+id/listAlreadyOrder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCheck"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

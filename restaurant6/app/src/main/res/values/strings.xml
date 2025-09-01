@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">RestaurantSystem6</string>
+    <string name="txtSeat">席：</string>
+    <string name="txtEN">円</string>
+    <string name="txtKO">個</string>
+    <string name="txtSEKI">席</string>
+    <string name="txtNote">備考：</string>
+    <string name="txtSum">合計</string>
+    <string name="hintNote">焼き加減、温度などを適宜記入</string>
+    <string name="btnAdd">追加</string>
+    <string name="btnChange">変更</string>
+    <string name="btnVacantSeatInquire">空席照会</string>
+    <string name="btnOrderSend">注文送信</string>
+    <string name="btnOrderInquire">注文照会</string>
+    <string name="btnCheck">会計</string>
+    <string name="txtOrderList">注文リスト</string>
+    <string name="txtAlreadyOrderList">注文済リスト</string>
+    <string name="toastNoSeat">席が選択されていません！</string>
+    <string name="toastNoQuantity">数量が0です！</string>
+    <string name="toastNotServeYet">配膳されていない商品があります。会計できません！</string>
+    <string name="txtOdState1">調理中</string>
+    <string name="txtOdState2">調理済</string>
+    <string name="txtOdState3">配膳済</string>
+    <string name="menuCook">厨房アプリ</string>
+    <string name="txtOrderedFoodList">受注食品リスト</string>
+    <string name="txtStartScroll">スクロール開始</string>
+    <string name="txtStopScroll">スクロール停止</string>
+</resources>
