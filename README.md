@@ -6,9 +6,6 @@ PHP　MySQL　Java　AndroidStudio(API26“Oreo” Android 8.0)　XAMPP(Apache)
 ## ○ 概要
 最終応用課題として飲食店のオーダーエントリー会計システムを作成した。Android端末（HUAWEI JDN2-W09）を店のスタッフが所持しており、クライアント端末としてそこから無線でwebサーバにアクセスすることを想定している。webサーバではPHPを用いてDBへアクセスする。  
 
-<img width="399" height="453" alt="image" src="https://github.com/user-attachments/assets/b7def1b7-a50e-4900-b0c8-31af6fc8b521" />
-<img width="586" height="606" alt="image" src="https://github.com/user-attachments/assets/c253745b-1c82-486d-adb9-bfaf7072fdea" />
-
 ## ○ テーブル詳細
 【席】seats  
 | 項目名 | 型 | 説明 |
